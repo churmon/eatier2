@@ -47,7 +47,7 @@ const SubNavbar = () => {
       opts={{
         align: "start",
       }}
-      className="mb-6 bg-gray-100"
+      className="mb-6 bg-gray-100 border-t-2"
     >
       <CarouselContent className='bg-gray-100 flex justify-between items-center h-12 w-full mx-auto px- text-gray-700 border-t-2'>
         {navItems.map((item, index) => (
