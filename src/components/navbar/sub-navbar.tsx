@@ -39,11 +39,7 @@ const SubNavbar = () => {
     { text: 'Fine Dinning', href:'/fine' },
     { text: 'Fish & Chips', href:'/fishchip' },
 
-
-
-
-
-    
+ 
   ];
 
   return (
@@ -55,7 +51,7 @@ const SubNavbar = () => {
     >
       <CarouselContent className='bg-gray-100 flex justify-between items-center h-12 w-full mx-auto px- text-gray-700 border-t-2'>
         {navItems.map((item, index) => (
-          <CarouselItem key={index} className="bg-gray-100 flex justify-between items-center h-12 basis-1/3 md:basis-1/3 lg:basis-1/5">
+          <CarouselItem key={index} className="bg-gray-100 flex justify-evenly items-center h-12 basis-1/2 md:basis-1/4 lg:basis-1/5">
             <Link href={item.href}
             key={index}
             className='p-4 hover:bg-[#63e763] rounded-xl m-2 cursor-pointer duration-300 hover:text-gray-900'
