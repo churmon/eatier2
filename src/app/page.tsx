@@ -24,7 +24,7 @@ export default function Home() {
             </div>
             <div className="mt-10 border-t-2">
               <h1 className="font-bold text-3xl">Find a Chef</h1>
-              <p className="text-md">Hosting friends over, a reunion, an event or missed your ex? Find a chef for a magical, savory meal. We've got you!</p>
+              <p className="text-md">Hosting friends over, a reunion, an event or missed your ex? Find a chef for a magical, savory meal. We&apos;ve got you!</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 place-items-center mt-12">
             <ChefCard />
