@@ -59,7 +59,7 @@ export function ChefCard() {
         
       </CarouselContent>
       <div className="absolute top-0  left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-        <ChefProfile image='/images/image5.jpg' />
+        <ChefProfile image='/images/image9.jpg' />
       </div>
       <div className="flex flex-col absolute bottom-[70px] right-2 px-2  bg-gray-100">
           <TiEyeOutline size={60} />
