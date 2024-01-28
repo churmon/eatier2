@@ -24,7 +24,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='bg-gray-100 flex items-center h-24 w-full px-4 text-gray-700 font-bold'>
+    <div className='bg-gray-100 flex items-center h-24 w-full pr-4 text-gray-700 font-bold'>
       {/* Logo */}
       <Link href='/' className='text-xl font-bold  mr-auto md:mr-0'><Logo /></Link>
       <div className='md:order-1 mr-2 md:mr-1'>
