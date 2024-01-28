@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Profile } from '../profile';
 import Link from 'next/link';
 import { BsGlobe } from 'react-icons/bs';
+import Logo from '../logo';
 
 
 const Navbar = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
   return (
     <div className='bg-gray-100 flex items-center h-24 w-full px-4 text-gray-700 font-bold'>
       {/* Logo */}
-      <Link href='/' className='text-3xl font-bold text-[#00df9a] mr-auto md:mr-0'>Eatier</Link>
+      <Link href='/' className='text-xl font-bold  mr-auto md:mr-0'><Logo /></Link>
       <div className='md:order-1 mr-2 md:mr-1'>
         <Profile />
       </div>

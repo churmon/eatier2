@@ -104,27 +104,27 @@ export default function Home() {
             <div className="bg-cover bg-center h-full" style={{backgroundImage: `url(/images/image7.jpg)`}}>
                 <div className="grid grid-cols-1 py-20 px-5 sm:grid-cols-2 md:grid-cols-3 gap-4  place-items-center">
                     <div>
-                        <h1 className="text-center font-bold text-2xl">Africa</h1>
+                        <h1 className="text-center text-white font-bold text-2xl">Africa</h1>
                         <RestaurantCard />
                     </div>
                     <div>
-                        <h1 className="text-center font-bold text-2xl">North America</h1>
+                        <h1 className="text-center text-white font-bold text-2xl">North America</h1>
                         <RestaurantCard />
                     </div>
                     <div>
-                        <h1 className="text-center font-bold text-2xl">Europe</h1>
+                        <h1 className="text-center text-white font-bold text-2xl">Europe</h1>
                         <RestaurantCard />
                     </div>
                     <div>
-                        <h1 className="text-center font-bold text-2xl">Asia</h1>
+                        <h1 className="text-center text-white font-bold text-2xl">Asia</h1>
                         <RestaurantCard />
                     </div>
                     <div>
-                        <h1 className="text-center font-bold text-2xl">South America</h1>
+                        <h1 className="text-center text-white font-bold text-2xl">South America</h1>
                         <RestaurantCard />
                     </div>
                     <div>
-                        <h1 className="text-center font-bold text-2xl">Oceania</h1>
+                        <h1 className="text-center text-white font-bold text-2xl">Oceania</h1>
                         <RestaurantCard />
                 </div>
                     
