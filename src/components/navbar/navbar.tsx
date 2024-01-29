@@ -18,9 +18,9 @@ const Navbar = () => {
 
   // Array containing navigation items
   const navItems = [
-    { id: 3, text: 'Dashboard' },
-    { id: 4, text: 'Login' },
-    { id: 5, text: 'Register' },
+    { id: 3, text: 'Dashboard', href:"/dashboard" },
+    { id: 4, text: 'Login', href:"/login" },
+    { id: 5, text: 'Register', href:"/register" },
   ];
 
   return (
@@ -49,12 +49,12 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className='hidden md:flex'>
         {navItems.map(item => (
-          <li
+          <Link href={item.href}
             key={item.id}
             className='p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'
           >
             {item.text}
-          </li>
+          </Link>
         ))}
       </ul>
 
@@ -76,7 +76,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
         {navItems.map(item => (
-          <Link href='/'
+          <Link href={item.href}
             key={item.id}
             className='p-4 block border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600'>
             {item.text}
