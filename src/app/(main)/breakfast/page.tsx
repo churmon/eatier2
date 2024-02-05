@@ -1,6 +1,9 @@
 import RestaurantCard from '@/components/card/restaurant-card'
+import Link from 'next/link'
 
 export default function BreakfastPage() {
+ const id: string ='1'
+
   return (
     
   <div className= "mx-2 mt-3 w-full">
@@ -154,7 +157,10 @@ export default function BreakfastPage() {
       </div>
 
       <div className="h-full w-full md:w-full grid md:grid-cols-3 mx-1 gap-4 overflow-y-auto">
-      <RestaurantCard />
+      <Link href={`/breakfast/${id}`}><RestaurantCard /></Link>
+      <Link href={`/breakfast/${id}`}><RestaurantCard /></Link>
+      <Link href={`/breakfast/${id}`}><RestaurantCard /></Link>
+      <Link href={`/breakfast/${id}`}><RestaurantCard /></Link>
       <RestaurantCard />
       <RestaurantCard />
       <RestaurantCard />

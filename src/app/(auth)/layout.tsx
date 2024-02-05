@@ -1,3 +1,4 @@
+import ProfileNavbar from '@/components/navbar/profile-navbar';
 import { Inter } from 'next/font/google';
 import { Metadata } from 'next/types';
 import React from 'react'
