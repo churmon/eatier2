@@ -23,7 +23,7 @@ export default function FirstSection() {
             </div>
 
             <div className="absolute z-10 top-2 right-2">
-                <div className="flex flex-col gap-2   sm:mr-2 font-bold">
+                <div className="flex flex-col gap-2 sm:flex-row sm:mr-2 font-bold">
                     <Link href="" className="bg-white px-4 py-1 rounded-lg">Help</Link>
                     <Link href="/register" className="bg-white px-4 py-1 rounded-lg">Sign up</Link>
                     <Link href="/login" className="bg-white px-4 py-1 rounded-lg">Sign in</Link>
