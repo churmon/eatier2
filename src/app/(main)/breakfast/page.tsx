@@ -2,7 +2,7 @@ import RestaurantCard from '@/components/card/restaurant-card'
 import Link from 'next/link'
 
 export default function BreakfastPage() {
- const id: string ='1'
+ const id: string ='2'
 
   return (
     

@@ -49,13 +49,13 @@ export default function ProfileNavbar({id}:any) {
             </svg>
         </Link>
         {/* //   -- image   -- */}
-        <Link href="">
+        <Link href={`/breakfast/${id}/gallery`}>
                 {/* <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> */}
                 <svg className="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="miter"><polygon points="22 15.5 17 10 10.59 16.99 6.5 13 2 17.5 2 22 22 22 22 15.5"></polygon><rect x="2" y="2" width="20" height="20" rx="0"></rect><line x1="6.99" y1="7" x2="7" y2="7" stroke-linecap="round" stroke-width="2"></line>
                 </svg>
         </Link>
 
-        <Link href="">
+        <Link href={`/breakfast/${id}/reviews`}>
             <svg className="w-8 h-8" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 508 508" xmlSpace="preserve" fill="#ffffff" stroke="#ffffff">
 
                 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -67,12 +67,12 @@ export default function ProfileNavbar({id}:any) {
                 </svg>
         </Link>
             
-        <Link href="">
+        <Link href={`/breakfast/${id}/sustainability`}>
             {/* <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> */}
                 <svg fill="#000000" className="w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M3,13A9,9 0 0,0 12,22A9,9 0 0,0 3,13M12,22A9,9 0 0,0 21,13A9,9 0 0,0 12,22M18,3V8A6,6 0 0,1 12,14A6,6 0 0,1 6,8V3C6.74,3 7.47,3.12 8.16,3.39C8.71,3.62 9.2,3.96 9.61,4.39L12,2L14.39,4.39C14.8,3.96 15.29,3.62 15.84,3.39C16.53,3.12 17.26,3 18,3Z" /></svg>
         </Link>
             
-        <Link href="">
+        <Link href={`/breakfast/${id}/share`}>
             {/* <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> */}
                     <svg className="w-8 h-8" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.734 15.8974L19.22 12.1374C19.3971 11.9927 19.4998 11.7761 19.4998 11.5474C19.4998 11.3187 19.3971 11.1022 19.22 10.9574L14.734 7.19743C14.4947 6.9929 14.1598 6.94275 13.8711 7.06826C13.5824 7.19377 13.3906 7.47295 13.377 7.78743V9.27043C7.079 8.17943 5.5 13.8154 5.5 16.9974C6.961 14.5734 10.747 10.1794 13.377 13.8154V15.3024C13.3888 15.6178 13.5799 15.8987 13.8689 16.0254C14.158 16.1521 14.494 16.1024 14.734 15.8974Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

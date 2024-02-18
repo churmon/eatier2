@@ -5,6 +5,7 @@ import InterestedCard from "@/components/card/interested-card";
 import RestaurantCard from "@/components/card/restaurant-card";
 import Navbar from "@/components/navbar/navbar";
 import SubNavbar from "@/components/navbar/sub-navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -104,8 +105,10 @@ export default function Home() {
             <div className="bg-cover bg-center h-full" style={{backgroundImage: `url(/images/image7.jpg)`}}>
                 <div className="grid grid-cols-1 py-20 px-5 sm:grid-cols-2 md:grid-cols-3 gap-4  place-items-center">
                     <div>
+                        <Link href="/africa">
                         <h1 className="text-center text-white font-bold text-2xl">Africa</h1>
                         <RestaurantCard />
+                        </Link>
                     </div>
                     <div>
                         <h1 className="text-center text-white font-bold text-2xl">North America</h1>
