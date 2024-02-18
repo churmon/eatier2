@@ -37,7 +37,7 @@ export default function FirstSection() {
                 <div>Come dine in Africa.</div>
             </div>
 
-            <div className="relative text-gray-500 mb-3 -mt-14 rounded-tl-3xl overflow-hidden rounded-br-xl pb-2 bg-gray-100 sm:mx-8 shadow-md">
+            <div className="relative text-gray-500 mb-3 -mt-14 rounded-tl-3xl overflow-hidden rounded-br-xl pb-2 bg-gray-100 mx-2 sm:mx-8 shadow-md">
                 <div className="">
                     <FirstSectionForm />
                     <h1 className="text-center mb-3">Recent searches</h1>
@@ -45,7 +45,7 @@ export default function FirstSection() {
             </div>
 
             <div className="">
-                <div className="mt-5 mx-10 border-b-2 mb-1 text-gray-500">
+                <div className="mt-5 mx-1 sm:mx-10 border-b-2 mb-1 text-gray-500">
                     <ContinentCarousel />
                 </div>
 

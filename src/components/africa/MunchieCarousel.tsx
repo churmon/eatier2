@@ -31,7 +31,7 @@ const MunchieCarousel = () => {
     >
       <CarouselContent className='flex justify-around'>
         {navItems.map((item, index) => (
-          <CarouselItem key={index} className="basis-3/3 md:basis-3/3">
+          <CarouselItem key={index} className="flex justify-evenly items-center basis-full md:basis-1/4 lg:basis-1/5">
             <div key={index}
           >
             <div className='flex flex-col justify-center items-center'>

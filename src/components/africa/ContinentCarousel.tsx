@@ -41,12 +41,12 @@ const ContinentCarousel = () => {
       }}
       className="mb-6 bg-white min-w-full py-5"
     >
-      <CarouselContent className='bg-gray-100 flex justify-between items-center h-12 w-full mx-auto px- text-gray-700 border-t-2'>
+      <CarouselContent className='bg-gray-100 flex justify-between items-center h-12 w-full text-gray-700 border-t-2'>
         {navItems.map((item, index) => (
           <CarouselItem key={index} className="bg-gray-100 flex justify-evenly items-center h-12 basis-1/2 md:basis-1/4 lg:basis-1/5">
             <Link href={item.href}
             key={index}
-            className='flex p-4 hover:bg-[#63e763] rounded-xl m-2 cursor-pointer duration-300 hover:text-gray-900'
+            className='flex p-4 hover:bg-[#63e763] rounded-xl cursor-pointer duration-300 hover:text-gray-900'
           >
             { item?.icon ? <ShoppingBag className="h-8 w-8 items-center"/>:""}{item.text}
           </Link>

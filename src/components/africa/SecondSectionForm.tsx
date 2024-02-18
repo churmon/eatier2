@@ -40,7 +40,7 @@ export function SecondSectionForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex justify-evenly space-x-3 z-10 rounded-xl ml-3 mt-5 pb-5 px-5 border-2 ">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col md:flex-row justify-evenly space-x-3 z-10 rounded-xl sm:ml-3 mt-5 pb-5 px-5 border-2 ">
         <FormField
           control={form.control}
           name="username"
