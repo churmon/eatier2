@@ -29,9 +29,9 @@ const MunchieCarousel = () => {
       }}
       className="mb-6 bg-white min-w-full py-5"
     >
-      <CarouselContent className='flex justify-center sm:justify-around items-center w-full'>
+      <CarouselContent className='flex justify-between'>
         {navItems.map((item, index) => (
-          <CarouselItem key={index} className="flex justify-center sm:justify-around items-center basis-full md:basis-1/4 lg:basis-1/5">
+          <CarouselItem key={index} className=" basis-full md:basis-1/4 lg:basis-1/5">
             <div key={index}
           >
             <div className='flex flex-col justify-center items-center'>
