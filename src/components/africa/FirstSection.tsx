@@ -7,6 +7,7 @@ import { FirstSectionForm } from "./FirstSectionForm"
 import { ShoppingBag, ShoppingCart } from "lucide-react"
 import RestaurantCard from "../card/restaurant-card"
 import HotelAfrica from "./HotelAfrica"
+import ContinentCarousel from "./ContinentCarousel"
 
 export default function FirstSection() {
   return (
@@ -44,18 +45,13 @@ export default function FirstSection() {
             </div>
 
             <div className="">
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 place-items-center mt-5 mx-10 border-b-2 mb-1 text-gray-500">
-                    <Link href="africa/northern-africa">Northern Africa</Link>
-                    <Link href="africa/southern-africa">Southern Africa</Link>
-                    <Link href="africa/shop-africa" className="flex"><ShoppingBag className="h-8 w-8 items-center" /> Shop Africa</Link>
-                    <Link href="africa/western-africa">Western Africa</Link>
-                    <Link href="africa/eastern-africa">Eastern Africa</Link>
-                    <Link href="africa/central-africa">Central Africa</Link>
+                <div className="mt-5 mx-10 border-b-2 mb-1 text-gray-500">
+                    <ContinentCarousel />
                 </div>
 
                 <div>
                     <div className="text-gray-900 ml-10 mt-7">Promoted</div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 mt-4 mx-20 gap-5">
+                    <div className="grid grid-cols-1 mx-5 md:grid-cols-3 mt-4 md:mx-20 gap-5">
                         <HotelAfrica />
                         <HotelAfrica />
                         <HotelAfrica />
