@@ -40,7 +40,7 @@ export function FirstSectionForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex space-x-3 z-10 rounded-tl-xl sm:ml-3 mt-5 pb-5 ">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col sm:flex-row space-x-3 z-10 rounded-tl-xl sm:ml-3 mt-5 pb-5 ">
         <FormField
           control={form.control}
           name="username"
