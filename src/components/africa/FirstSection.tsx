@@ -16,18 +16,21 @@ export default function FirstSection() {
                 <Image src="/images/image5.jpg" alt="" width={1000} height={700} loading="lazy" className="w-full overflow-hidden max-h-[500px] object-cover object-center" />
             </div>
 
-            <div className="flex justify-between absolute z-10 top-2 w-full">
+            <div className=" absolute z-10 top-2">
                 <div className="bg-white ml-2">
                     <Link href="/"><LogoAfrica /></Link>
                 </div>
-                <div className="fex space-x-3 mr-2 font-bold">
+            </div>
+
+            <div className="absolute z-10 top-2 right-2">
+                <div className="flex flex-col gap-2   sm:mr-2 font-bold">
                     <Link href="" className="bg-white px-4 py-1 rounded-lg">Help</Link>
                     <Link href="/register" className="bg-white px-4 py-1 rounded-lg">Sign up</Link>
                     <Link href="/login" className="bg-white px-4 py-1 rounded-lg">Sign in</Link>
                 </div>
             </div>
 
-            <div className="text-white absolute top-28 left-3 z-10">
+            <div className="text-white absolute top-20 sm:top-28 left-3 z-10">
                 <div className="font-bold text-xl my-3">Africa|| Explore hospitality</div>
                 <div>Indulge yourself with African cuisine that transcends from traditional dishes dating back to past good times to modern times.</div>
                 <div>Come dine in Africa.</div>
