@@ -44,7 +44,7 @@ export default function FirstSection() {
             </div>
 
             <div className="">
-                <div className="grid grid-cols-3 md:grid-cols-6 place-items-center mt-5 mx-10 border-b-2 mb-1 text-gray-500">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 place-items-center mt-5 mx-10 border-b-2 mb-1 text-gray-500">
                     <Link href="africa/northern-africa">Northern Africa</Link>
                     <Link href="africa/southern-africa">Southern Africa</Link>
                     <Link href="africa/shop-africa" className="flex"><ShoppingBag className="h-8 w-8 items-center" /> Shop Africa</Link>
