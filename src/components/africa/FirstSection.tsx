@@ -32,7 +32,7 @@ export default function FirstSection() {
 
             <div className="text-white absolute top-20 sm:top-28 left-3 z-10">
                 <div className="font-bold text-xl my-3">Africa|| Explore hospitality</div>
-                <div>Indulge yourself with African cuisine that transcends from traditional dishes dating back to past good times to modern times.</div>
+                <div className="hidden sm:block">Indulge yourself with African cuisine that transcends from traditional dishes dating back to past good times to modern times.</div>
                 <div>Come dine in Africa.</div>
             </div>
 
