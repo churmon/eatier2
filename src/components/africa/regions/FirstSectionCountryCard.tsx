@@ -10,7 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Link from "next/link"
-export default function HotelAfrica({text}:{text:string}) {
+export default function FirstSectionCountryCard({text}:{text:string}) {
 
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
@@ -63,17 +63,8 @@ export default function HotelAfrica({text}:{text:string}) {
       <CarouselNext />
     </Carousel>
 
-    <div className="text-center my-2">
+    <div className="absolute top-2 left-2 font-bold px-5 py-2 text-3xl rounded-lg text-white bg-black/35">
         {text}
-    </div>
-
-    <div className="flex justify-around my-2">
-        <FaStar size={30} color="yellow" />
-        <FaStar size={30} color="yellow" />
-        <FaStar size={30} color="yellow" />
-        <FaStar size={30} color="yellow" />
-        <FaStar size={30} color="yellow" />
-         
     </div>
 
 </div>

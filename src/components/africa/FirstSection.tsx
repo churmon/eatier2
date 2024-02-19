@@ -52,9 +52,9 @@ export default function FirstSection() {
                 <div>
                     <div className="text-gray-900 ml-10 mt-7">Promoted</div>
                     <div className="grid grid-cols-1 mx-5 md:grid-cols-3 mt-4 md:mx-20 gap-5">
-                        <HotelAfrica />
-                        <HotelAfrica />
-                        <HotelAfrica />
+                        <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
+                        <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
+                        <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
                     </div>
                 </div>
             </div>
