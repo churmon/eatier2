@@ -21,13 +21,13 @@ export default function SecondSection() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-3 mb-3">
-                <div>
+                <div className="-skew-x-[20deg] w-[300px] h-[300px] mx-auto ">
                     <MostViewAndRecommended text="Most viewed" />
                 </div>
-                <div>
+                <div className="w-[300px] h-[300px] mx-auto ">
                     <MostViewAndRecommended text="Trending" />
                 </div>
-                <div>
+                <div className="-skew-x-[20deg] w-[300px] h-[300px] mx-auto ">
                     <MostViewAndRecommended text="Most Recommented" />
                 </div>
             </div>
@@ -48,6 +48,9 @@ export default function SecondSection() {
                 <div>Eatier</div>
             </div>
         </div>
+
+        
+        
     </div>
   )
 }

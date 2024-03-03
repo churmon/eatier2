@@ -1,5 +1,4 @@
 import FirstSection from '@/components/africa/regions/FirstSectionRegion'
-import React from 'react'
 
 export default function SoutherAfricaPage() {
   return (

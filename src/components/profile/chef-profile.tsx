@@ -8,7 +8,7 @@ import {
     return (
       <Avatar className="h-24 w-24 object-cover">
         <AvatarImage src={image} alt="@shadcn" />
-        <AvatarFallback>CN</AvatarFallback>
+        <AvatarFallback>Chef</AvatarFallback>
       </Avatar>
     )
   }

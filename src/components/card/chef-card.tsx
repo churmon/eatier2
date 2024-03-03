@@ -31,14 +31,7 @@ export function ChefCard() {
       id:3,
       src:"/images/image3.jpg",
     },
-    {
-      id:4,
-      src:"/images/image4.jpg",
-    },
-    {
-      id:5,
-      src:'/images/image5.jpg',
-    },
+    
   ]
 
   return (

@@ -59,7 +59,7 @@ export default function FirstSection() {
                 </div>
             </div>
 
-            <h1 className="ml-5 mb-5 text-gray-500">Hey, friend. Where and what are we having today?</h1>
+            <h1 className="ml-5 mb-5 mt-5 text-gray-900">Hey, friend. Where and what are we having today?</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-3">
                 <div className="w-full max-h-[500px] relative">
                     <img src="/images/image4.jpg" alt=""   className="w-full overflow-hidden h-full  object-cover object-center" />

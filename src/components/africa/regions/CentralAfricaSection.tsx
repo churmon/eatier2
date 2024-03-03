@@ -10,7 +10,7 @@ import { FaLongArrowAltRight } from "react-icons/fa"
 import HotelAfrica from "../HotelAfrica"
 import { ChefCard } from "@/components/card/chef-card"
 
-export default function FirstSection({text1,text2}:{text1:string, text2:string}) {
+export default function CentralAfricaSection({text1,text2}:{text1:string, text2:string}) {
   return (
     <div className="bg-white w-full pb-5">
         <div className="relative ">
@@ -56,16 +56,16 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
 
             <div className="grid grid-cols-1 mt-5 md:grid-cols-4 place-items-center gap-6 mx-5">
                 <div>
-                    <FirstSectionCountryCard text="Namibia" />
+                    <FirstSectionCountryCard text="Cameroon" />
                 </div>
                 <div>
-                    <FirstSectionCountryCard text="Mozambique" />
+                    <FirstSectionCountryCard text="Sao Tome and Principe" />
                 </div>
                 <div>
-                    <FirstSectionCountryCard text="Zimbabwe" />
+                    <FirstSectionCountryCard text="Gabon" />
                 </div>
                 <div>
-                    <FirstSectionCountryCard text="South Africa" />
+                    <FirstSectionCountryCard text="Congo" />
                 </div>
             </div>
 
@@ -78,21 +78,21 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
             </div>
 
             <div className=" text-2xl mt-5 text-gray-900">
-                Enjoy only the best and do return back, just for more.
+                Enjoy the delicacies from your favourite city or town with friends or otherwise.
             </div>
 
             <div className="grid grid-cols-1 mt-5 md:grid-cols-4 place-items-center gap-6 mx-5">
                 <div>
-                    <FirstSectionCountryCard text="Gaborone" />
+                    <FirstSectionCountryCard text="Kinshasa" />
                 </div>
                 <div>
-                    <FirstSectionCountryCard text="Cape Town" />
+                    <FirstSectionCountryCard text="Bangui" />
                 </div>
                 <div>
-                    <FirstSectionCountryCard text="Antananarivo" />
+                    <FirstSectionCountryCard text="N'Djamena" />
                 </div>
                 <div>
-                    <FirstSectionCountryCard text="Lusaka" />
+                    <FirstSectionCountryCard text="Brazzaville" />
                 </div>
             </div>
 
@@ -100,47 +100,47 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                     <Link href="" className="flex justify-end"><span className="bg-orange-500 rounded-lg px-2">More</span> <FaLongArrowAltRight className="h-[30px] w-[30px] text-orange-500" /></Link>
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-500">Trending</div>
+            <div className="text-xl mt-8 ml-2 text-gray-900">Trending now</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
+                <HotelAfrica text="Bear Best 1 Av, Brazzaville, Congo" />
+                <HotelAfrica text="Peperoni, Libreville, Gabon" />
+                <HotelAfrica text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <HotelAfrica text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
             <div className="text-xl mt-8 ml-2 text-gray-900">Most viewed</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
+                <HotelAfrica text="Bear Best 1 Av, Brazzaville, Congo" />
+                <HotelAfrica text="Peperoni, Libreville, Gabon" />
+                <HotelAfrica text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <HotelAfrica text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
             <div className="text-xl mt-8 ml-2 text-gray-900">Most recommended</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
+                <HotelAfrica text="Bear Best 1 Av, Brazzaville, Congo" />
+                <HotelAfrica text="Peperoni, Libreville, Gabon" />
+                <HotelAfrica text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <HotelAfrica text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
             <div className="text-center mt-5">
                 <Link href="" className="text-black px-3 py-1 font-bold border-2">View more</Link>
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Expect more, experience more</div>
+            <div className="text-xl mt-8 ml-2 text-gray-900">Beyond exceptional places for you</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
+                <HotelAfrica text="Bear Best 1 Av, Brazzaville, Congo" />
+                <HotelAfrica text="Peperoni, Libreville, Gabon" />
+                <HotelAfrica text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <HotelAfrica text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Craving? Get in touch with any chef to serve you the best dish of your choice</div>
+            <div className="text-xl mt-8 ml-2 text-gray-900">Chefs just make food taste better.</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-10 gap-5">
                 <ChefCard  />
@@ -149,13 +149,13 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                 <ChefCard  />
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Top picks for you</div>
+            <div className="text-xl mt-8 ml-2 text-gray-900">Promoted.</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
-                <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
-                <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
+                <HotelAfrica text="Bear Best 1 Av, Brazzaville, Congo" />
+                <HotelAfrica text="Peperoni, Libreville, Gabon" />
+                <HotelAfrica text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <HotelAfrica text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
             
