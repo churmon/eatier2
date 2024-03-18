@@ -17,17 +17,29 @@ import {
 import { Input } from "@/components/ui/input"
 
 const formSchema = z.object({
-  username: z.string().min(2, {
+  craving: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+  country: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+  price: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
 })
 
-export function FirstSectionForm() {
+type colorType = {
+  color?:any
+}
+
+export function FirstSectionForm({color}:colorType) {
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      craving: "",
+      country: "",
+      price: "",
     },
   })
  
@@ -43,7 +55,7 @@ export function FirstSectionForm() {
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col sm:flex-row space-x-3 z-10 rounded-tl-xl sm:ml-3 mt-5 pb-5 ">
         <FormField
           control={form.control}
-          name="username"
+          name="craving"
           render={({ field }) => (
             <FormItem className="flex items-end text-gray-500 w-full">
               <FormLabel className="w-28">Craving for</FormLabel>
@@ -57,10 +69,10 @@ export function FirstSectionForm() {
 
         <FormField
           control={form.control}
-          name="username"
+          name="country"
           render={({ field }) => (
             <FormItem className="flex items-end text-gray-500 w-full">
-              <FormLabel>Country</FormLabel>
+              <FormLabel className={`${color}`}>Country</FormLabel>
               <FormControl>
                 <Input placeholder="" {...field} className="bg-gray-100 border-b-gray-500 border-b-2 border-t-0 border-x-0 rounded-none  focus-visible:ring-0 focus-visible:ring-ring focus-visible:ring-offset-0" />
               </FormControl>
@@ -71,7 +83,7 @@ export function FirstSectionForm() {
 
         <FormField
           control={form.control}
-          name="username"
+          name="price"
           render={({ field }) => (
             <FormItem className="flex items-end text-gray-500 w-full">
               <FormLabel>Price</FormLabel>

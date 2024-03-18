@@ -9,8 +9,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import Link from "next/link"
-export default function InterestedCard() {
+
+type imgHeightProp ={
+  imgHeight?:any,
+}
+
+
+  export default function InterestedCard({imgHeight}:imgHeightProp) {
 
     const plugin = React.useRef(
         Autoplay({ delay: 2000, stopOnInteraction: true })
@@ -41,7 +46,7 @@ export default function InterestedCard() {
     
 
   return (
-    <div className="w-full mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative mb-4">
+    <div className={`w-full mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative mb-4 `}>
     
 
     <Carousel
@@ -54,7 +59,7 @@ export default function InterestedCard() {
         {ListOfImages.map((item, index) => (
           <CarouselItem key={index} className="">
                 <div className="flex aspect-square items-center justify-center w-full ">
-                  <img src={item.src} alt="" className="h-full w-full " />
+                  <img src={item.src} alt="" className={` ${imgHeight ? imgHeight: 'h-full' } w-full`} />
                 </div>
           </CarouselItem>
         ))}

@@ -103,36 +103,39 @@ export default function Home() {
                 </div>          
             </div>
             <div className="bg-cover bg-center h-full" style={{backgroundImage: `url(/images/image7.jpg)`}}>
-                <div className="grid grid-cols-1 py-20 px-5 sm:grid-cols-2 md:grid-cols-3 gap-4  place-items-center">
+                <div className="grid grid-cols-1 pt-20 px-5 sm:grid-cols-2 md:grid-cols-3 gap-4  place-items-center">
                     <div>
                         <Link href="/africa">
                         <h1 className="text-center text-white font-bold text-2xl">Africa</h1>
-                        <RestaurantCard />
+                        <InterestedCard />
                         </Link>
                     </div>
                     <div>
-                        <h1 className="text-center text-white font-bold text-2xl">North America</h1>
-                        <RestaurantCard />
+                        <Link href="/america">
+                        <h1 className="text-center text-white font-bold text-2xl">America</h1>
+                        <InterestedCard />
+                        </Link>
                     </div>
                     <div>
+                      <Link href="/europe">
                         <h1 className="text-center text-white font-bold text-2xl">Europe</h1>
-                        <RestaurantCard />
+                        <InterestedCard />
+                        </Link>
                     </div>
-                    <div>
-                        <h1 className="text-center text-white font-bold text-2xl">Asia</h1>
-                        <RestaurantCard />
-                    </div>
-                    <div>
-                        <h1 className="text-center text-white font-bold text-2xl">South America</h1>
-                        <RestaurantCard />
-                    </div>
-                    <div>
-                        <h1 className="text-center text-white font-bold text-2xl">Oceania</h1>
-                        <RestaurantCard />
-                </div>
+                    <div className="">
+                          <Link href="/asia">
+                            <h1 className="text-center text-white font-bold text-2xl">Asia</h1>
+                            <InterestedCard />
+                            </Link>
+                        </div>
+                        <div className="">
+                          <Link href="/oceania">
+                            <h1 className="text-center text-white font-bold text-2xl">Oceania</h1>
+                            <InterestedCard />
+                            </Link>
+                        </div>
                     
-                    
-                </div>
+                </div> 
             </div>
 
           </div>

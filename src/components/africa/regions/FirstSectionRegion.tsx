@@ -9,8 +9,16 @@ import FirstSectionCountryCard from "./FirstSectionCountryCard"
 import { FaLongArrowAltRight } from "react-icons/fa"
 import HotelAfrica from "../HotelAfrica"
 import { ChefCard } from "@/components/card/chef-card"
+import Footer from "@/components/Footer"
 
-export default function FirstSection({text1,text2}:{text1:string, text2:string}) {
+type textProps = {
+    text1:string,
+    text2:string,
+    text1Size?:any,
+    text2Size?:any,
+}
+
+export default function FirstSection({text1,text2,text1Size,text2Size}:textProps) {
   return (
     <div className="bg-white w-full pb-5">
         <div className="relative ">
@@ -33,8 +41,8 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
             </div>
 
             <div className="text-white absolute top-20 sm:top-28 left-3 z-10">
-                <div className="font-bold text-xl my-3">{text1}</div>
-                <div className="hidden sm:block">{text2}</div>
+                <div className={`font-bold my-3 md:${text1Size}`}>{text1}</div>
+                <div className={`font-bold hidden sm:block md:${text2Size}`}>{text2}</div>
             </div>
 
             <div className="relative text-gray-500 mb-3 -mt-[75px] md:-mt-14 md:rounded-l-full overflow-hidden rounded-[35px] md:rounded-r-full pb-2 bg-gray-100 mx-5 md:mx-16 shadow-md">
@@ -50,7 +58,7 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                 <ChefHat className="md:h-[80px] md:w-[80px] h-[30px] w-[40px]" />
             </div>
 
-            <div className="text-center mt-9 text-2xl">
+            <div className="text-center font-bold mt-9 md:text-2xl">
                 Find something scrumptious within or outside your country because life is best enjoyed with good food.
             </div>
 
@@ -77,7 +85,7 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                 Ad Space
             </div>
 
-            <div className=" text-2xl mt-5 text-gray-900">
+            <div className="ml-5 md:text-2xl mt-5 text-gray-900 font-bold">
                 Enjoy only the best and do return back, just for more.
             </div>
 
@@ -100,7 +108,7 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                     <Link href="" className="flex justify-end"><span className="bg-orange-500 rounded-lg px-2">More</span> <FaLongArrowAltRight className="h-[30px] w-[30px] text-orange-500" /></Link>
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-500">Trending</div>
+            <div className="text-xl mt-8 ml-5 text-gray-900 font-bold">Trending</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
                 <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
@@ -109,7 +117,7 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                 <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Most viewed</div>
+            <div className="text-xl mt-8 ml-5 text-gray-900 font-bold">Most viewed</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
                 <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
@@ -118,7 +126,7 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                 <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Most recommended</div>
+            <div className="text-xl mt-8 ml-5 text-gray-900 font-bold">Most recommended</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
                 <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
@@ -131,7 +139,7 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                 <Link href="" className="text-black px-3 py-1 font-bold border-2">View more</Link>
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Expect more, experience more</div>
+            <div className="text-xl mt-8 ml-5 text-gray-900 font-bold">Expect more, experience more</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
                 <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
@@ -140,16 +148,16 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                 <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Craving? Get in touch with any chef to serve you the best dish of your choice</div>
+            <div className="text-xl mt-8 ml-5 text-gray-900 font-bold">Craving? Get in touch with any chef to serve you the best dish of your choice</div>
 
-            <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-10 gap-5">
+            <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-16 gap-5">
                 <ChefCard  />
                 <ChefCard  />
                 <ChefCard  />
                 <ChefCard  />
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Top picks for you</div>
+            <div className="text-xl mt-8 ml-5 text-gray-900 font-bold">Top picks for you</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
                 <HotelAfrica text="Bear Best 1 Av, Harare, Zimbabwe" />
@@ -158,9 +166,8 @@ export default function FirstSection({text1,text2}:{text1:string, text2:string})
                 <HotelAfrica text="Peperoni, Dakar, Senegal, W.A" />
             </div>
 
-            
         </div>
-        
+        <Footer />
     </div>
   )
 }

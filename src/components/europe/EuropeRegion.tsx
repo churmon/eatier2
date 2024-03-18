@@ -1,27 +1,23 @@
 import LogoAfrica from "@/components/logo-africa"
 import Image from "next/image"
 import Link from "next/link"
-import { FirstSectionForm } from "./FirstSectionFormRegion"
 import { ChefHat } from "lucide-react"
 import { MdRestaurant } from "react-icons/md"
 import { BsCloudSun } from "react-icons/bs"
-import FirstSectionCountryCard from "./FirstSectionCountryCard"
 import { FaLongArrowAltRight } from "react-icons/fa"
-import HotelAfrica from "../HotelAfrica"
 import { ChefCard } from "@/components/card/chef-card"
+import Card from "../asia/Card"
+import HotelAfrica from "../africa/HotelAfrica"
+import FirstSectionCountryCard from "../africa/regions/FirstSectionCountryCard"
+import { FirstSectionForm } from "../africa/regions/FirstSectionFormRegion"
+import Footer from "../Footer"
 
-type textProps = {
-    text1:string,
-    text2:string,
-    text1Size?:any,
-    text2Size?:any,
-}
-    export default function NorthenAfricaSection({text1,text2,text1Size,text2Size}:textProps) {
+export default function AsiaRegion({text, countries,cities}:any) {
   return (
     <div className="bg-white w-full pb-5">
         <div className="relative ">
             <div>
-                <Image src="/images/image5.jpg" alt="" width={1000} height={700} loading="lazy" className="w-full rounded-b-[80px] overflow-hidden max-h-[500px] object-cover object-center" />
+                <Image src="/images/image5.jpg" alt="" width={1000} height={700} loading="lazy" className="w-full  overflow-hidden max-h-[500px] object-cover object-center" />
             </div>
 
             <div className=" absolute z-10 top-2">
@@ -39,8 +35,8 @@ type textProps = {
             </div>
 
             <div className="text-white absolute top-20 sm:top-28 left-3 z-10">
-                <div className="font-bold text-xl my-3">{text1}</div>
-                <div className="hidden sm:block">{text2}</div>
+                <div className="font-bold text-xl my-3">{text.text1}</div>
+                <div className="hidden sm:block">{text.text2}</div>
             </div>
 
             <div className="relative text-gray-500 mb-3 -mt-[75px] md:-mt-14 md:rounded-l-full overflow-hidden rounded-[35px] md:rounded-r-full pb-2 bg-gray-100 mx-5 md:mx-16 shadow-md">
@@ -57,22 +53,14 @@ type textProps = {
             </div>
 
             <div className="text-center mt-9 text-2xl">
-                Explore new dishes.
+                {text.text3}
             </div>
 
             <div className="grid grid-cols-1 mt-5 md:grid-cols-4 place-items-center gap-6 mx-5">
-                <div>
-                    <FirstSectionCountryCard text="Tunisia" />
-                </div>
-                <div>
-                    <FirstSectionCountryCard text="Morocco" />
-                </div>
-                <div>
-                    <FirstSectionCountryCard text="Libya" />
-                </div>
-                <div>
-                    <FirstSectionCountryCard text="Algerria" />
-                </div>
+             
+                    {countries.map((country:any,index:any)=>(
+                        <FirstSectionCountryCard text={country} key={index} />
+                    ))}
             </div>
 
             <div className="font-bold">
@@ -84,89 +72,90 @@ type textProps = {
             </div>
 
             <div className=" text-2xl mt-5 text-gray-900">
-                Spoil yourself in these places.
+                {text.text4}
             </div>
 
             <div className="grid grid-cols-1 mt-5 md:grid-cols-4 place-items-center gap-6 mx-5">
-                <div>
-                    <FirstSectionCountryCard text="Cairo" />
-                </div>
-                <div>
-                    <FirstSectionCountryCard text="Tunis" />
-                </div>
-                <div>
-                    <FirstSectionCountryCard text="Marrakech" />
-                </div>
-                <div>
-                    <FirstSectionCountryCard text="Khartoum" />
-                </div>
+             
+                    {cities.map((city:any,index:any)=>(
+                        <FirstSectionCountryCard text={city} key={index} />
+                    ))}
             </div>
 
             <div className="font-bold mt-2">
                     <Link href="" className="flex justify-end"><span className="bg-orange-500 rounded-lg px-2">More</span> <FaLongArrowAltRight className="h-[30px] w-[30px] text-orange-500" /></Link>
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-500">Trending</div>
+            <div className="text-xl mt-8 ml-2 text-gray-900">Trending</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Tunis, Tunisia" />
-                <HotelAfrica text="Peperoni, Marrakech, Morocco" />
-                <HotelAfrica text="Bear Best 1 Av, Marrakech, Morocco" />
-                <HotelAfrica text="Peperoni, unis, Tunisia" />
+                <Card text="Bear Best 1 Av, Brazzaville, Congo" />
+                <Card text="Peperoni, Libreville, Gabon" />
+                <Card text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <Card text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
             <div className="text-xl mt-8 ml-2 text-gray-900">Most viewed</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Tunis, Tunisia" />
-                <HotelAfrica text="Peperoni, Marrakech, Morocco" />
-                <HotelAfrica text="Bear Best 1 Av, Marrakech, Morocco" />
-                <HotelAfrica text="Peperoni, unis, Tunisia" />
+                <Card text="Bear Best 1 Av, Brazzaville, Congo" />
+                <Card text="Peperoni, Libreville, Gabon" />
+                <Card text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <Card text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
             <div className="text-xl mt-8 ml-2 text-gray-900">Most recommended</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Tunis, Tunisia" />
-                <HotelAfrica text="Peperoni, Marrakech, Morocco" />
-                <HotelAfrica text="Bear Best 1 Av, Marrakech, Morocco" />
-                <HotelAfrica text="Peperoni, unis, Tunisia" />
+                <HotelAfrica text="Bear Best 1 Av, Brazzaville, Congo" />
+                <HotelAfrica text="Peperoni, Libreville, Gabon" />
+                <HotelAfrica text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <HotelAfrica text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
             <div className="text-center mt-5">
                 <Link href="" className="text-black px-3 py-1 font-bold border-2">View more</Link>
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Have it your way</div>
+            <div className="text-xl mt-8 ml-2 text-gray-900">{text.text4}</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Tunis, Tunisia" />
-                <HotelAfrica text="Peperoni, Marrakech, Morocco" />
-                <HotelAfrica text="Bear Best 1 Av, Marrakech, Morocco" />
-                <HotelAfrica text="Peperoni, unis, Tunisia" />
+                <HotelAfrica text="Bear Best 1 Av, Brazzaville, Congo" />
+                <HotelAfrica text="Peperoni, Libreville, Gabon" />
+                <HotelAfrica text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <HotelAfrica text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
-            <div className="text-xl mt-8 ml-2 text-gray-900">Tailored by exceptiona chefs.</div>
-
-            <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-10 gap-5">
-                <ChefCard  />
-                <ChefCard  />
-                <ChefCard  />
-                <ChefCard  />
-            </div>
-
-            <div className="text-xl mt-8 ml-2 text-gray-900">Suggested based on your location.</div>
+            <div className="text-xl mt-8 ml-2 text-gray-900">{text.text5}</div>
 
             <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
-                <HotelAfrica text="Bear Best 1 Av, Tunis, Tunisia" />
-                <HotelAfrica text="Peperoni, Marrakech, Morocco" />
-                <HotelAfrica text="Bear Best 1 Av, Marrakech, Morocco" />
-                <HotelAfrica text="Peperoni, unis, Tunisia" />
+                <HotelAfrica text="Bear Best 1 Av, Brazzaville, Congo" />
+                <HotelAfrica text="Peperoni, Libreville, Gabon" />
+                <HotelAfrica text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <HotelAfrica text="Peperoni, Kinshasa, DR Congo" />
+            </div>
+
+            <div className="text-xl mt-8 ml-2 text-gray-900">{text.text6}</div>
+
+            <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-[50px] gap-5">
+                <ChefCard  />
+                <ChefCard  />
+                <ChefCard  />
+                <ChefCard  />
+            </div>
+
+            <div className="text-xl mt-8 ml-2 text-gray-900">{text.text7}</div>
+
+            <div className="grid grid-cols-1 mx-2 md:grid-cols-4 mt-3 gap-5">
+                <HotelAfrica text="Bear Best 1 Av, Brazzaville, Congo" />
+                <HotelAfrica text="Peperoni, Libreville, Gabon" />
+                <HotelAfrica text="Bear Best 1 Av, Yaounde, Cameroon" />
+                <HotelAfrica text="Peperoni, Kinshasa, DR Congo" />
             </div>
 
             
         </div>
-        
+        <Footer />
     </div>
   )
 }
